@@ -1,0 +1,44 @@
+<div class="container">
+
+<div class="container-card">
+    <mat-card class="login-card">
+        <mat-card-title class="cardtitle">
+            User Login
+        </mat-card-title>
+        <mat-card-content class="content">
+            <mat-form-field class="example-full-width">
+                <mat-label style="font-size: medium; color: whitesmoke;">Username</mat-label>
+                <input matInput type = "text" placeholder="abc@gmail.com" [(ngModel)]="email">
+                <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="email=''">
+
+                    <mat-icon style="transform: scale(1.5);">close</mat-icon>
+                </button>
+              </mat-form-field>
+
+              <mat-form-field class="example-full-width">
+                <mat-label style="font-size: medium; color: whitesmoke;">Password</mat-label>
+                <input matInput type = "password" [(ngModel)]="password"  >
+                <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="password=''">
+
+                  <mat-icon style="transform: scale(1.5);">close</mat-icon>
+              </button>
+            </mat-form-field>
+
+
+                  <mat-form-field class="example-full-width">
+                    <mat-label style="font-size: medium; color: whitesmoke;">Date</mat-label>
+                    <input matInput type = "date" [(ngModel)]="date"  >
+                    <mat-icon style="transform: scale(1.5);">close</mat-icon>
+            </mat-form-field>
+
+
+
+
+              <button mat-raised-button class="button" (click)="UserLogin(email,password)"><b class="login-button">Login</b></button>
+        </mat-card-content>
+    </mat-card>
+
+
+</div>
+
+</div>

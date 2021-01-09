@@ -1,0 +1,56 @@
+.container{
+    background-image: url('images/playing-cards-1201257.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+.content{
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.login-card{
+    justify-content: center;
+    width: 35%;
+    height: 45%;    
+    margin: auto;
+    background: linear-gradient(to top, rgba(226, 226, 226, 0.801), rgba(122, 114, 114, 0.6));
+    border-radius: 20px;  
+    box-shadow: 6px 9px 12px 3px rgb(0, 0, 0);
+    vertical-align: middle;
+    text-align: center;
+
+}
+.cardtitle{
+    text-align: center;
+    color:white
+}
+.example-full-width{
+    width:100%;
+    color: white;
+}
+.login-button{
+font-size:medium;
+margin-top: 24px;    
+font-size: medium;
+letter-spacing: 1px;
+text-transform: uppercase;
+text-decoration: none;
+font-family: sans-serif;
+color: white;
+}
+.container-card{
+    text-align: center;
+    transform: translateY(50%);
+}
+.button{
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;   
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}

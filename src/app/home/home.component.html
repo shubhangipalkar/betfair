@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<body class="body">
+  
+<div class="background">
+    <mat-toolbar class="toolbar">   
+            <p>
+                Welcome Admin
+            </p>
+            <span class="example-spacer"></span>
+
+            <button mat-raised-button class="logout" (click)="cache()">
+              Clear Cache
+          </button>
+        <span class="spacer"></span>
+            <button mat-raised-button class="logout" (click)="logout()">
+                Logout
+            </button>
+    </mat-toolbar>
+
+    <div class="selector">
+        <div class="selector-option">
+            <h3 style="font-weight: 700;">
+                Select Sports Name
+            </h3>
+            <mat-form-field class="selector-option">
+                <mat-label style="font-weight: 700;">Sports</mat-label>
+                    <mat-select [value]="selected" (selectionChange)="getSeries($event)" #id>
+                        <mat-option value="1">Cricket</mat-option>
+                        <mat-option value="2">FootBall</mat-option>
+                        <mat-option value="3">Tennis</mat-option>
+                        <mat-option value="4">IPL</mat-option>
+                        <mat-option value="5">Ruby</mat-option>
+                        <mat-option value="6">Boxing</mat-option>
+                        <mat-option value="8">F1 Car Racing</mat-option>
+                      </mat-select>
+              </mat-form-field>
+        </div>    
+        </div>
+
+        <!--Table-->
+
+        <table class="table" >
+            <tr>
+              <th>Series Id</th>
+              <th>Series Name</th> 
+              <th>Status</th>
+              <th>Hide/Unhide</th>
+            </tr>
+
+            <tr *ngFor="let row of rowData" >
+              <td style="text-align: center;">{{ row.seriesId }}</td>
+              <td style="text-align: center;">{{ row.seriesName }}</td>
+              <td style="text-align: center;">{{ row.is_show }}</td>
+              <td style="text-align: center;">
+                <span style="padding-right: 12px;">Unhide</span>
+                <span><mat-slide-toggle color="primary" (change)="onTrue($event,row)" [ngModel]="row['is_show']"></mat-slide-toggle></span>
+                <span style="padding-left: 12px;">Hide</span>
+            </td>
+            </tr>
+          </table>
+
+        
+        </div>
+
+        </body>
+
+      
+    
